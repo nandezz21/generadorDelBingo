@@ -1,5 +1,4 @@
 import discord
-import my_secrets
 import requests
 import cv2
 import numpy as np
