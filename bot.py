@@ -189,7 +189,7 @@ def dibujar_textos(img, cuadros, textos, fuente_path="arialbd.ttf"):
             prefijo = None  # Para los últimos 3, verificamos si ya tienen "BUFF" o "NERF"
         
         # Si es uno de los últimos 3 cuadros, revisamos si contiene "BUFF" o "NERF" en cualquier parte
-        if i >= 6:
+        if i >= 0:
             match = re.search(r"(BUFF|NERF)", texto, re.IGNORECASE)
             if match:
                 prefijo = match.group(1).upper()  # Extrae la palabra encontrada
